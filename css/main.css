@@ -1,0 +1,156 @@
+html, body{
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.topnav{
+    background-color: coral;
+    overflow: hidden;
+    padding: 14px 14px 14px 0px;
+} 
+.firstlist{
+    background-color: purple;
+    padding: 14px 14px 14px 0px;
+    color: black;
+}
+    
+    a, li{
+    list-style: none;
+    display: inline;
+    color: #f2f2f2 ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: capitalize;
+}
+.topnav a{
+    padding: 14px;
+}
+.topnav a:hover{
+background-color:chartreuse;
+color: #000000;
+}
+.hero-image{
+    background-image: url(https://cdn.pixabay.com/photo/2016/11/06/23/31/breakfast-1804457_960_720.jpg);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+div.hero-txt{
+    text-align: center;
+    padding-top: 20%;
+    color: midnightblue;
+}
+span{
+    color: yellow;
+}
+div.hero-txt h1{
+    font-size: 3em;
+}
+div.hero-txt a button{
+    color: white;
+    background: red;
+      padding: 10px 50px;
+      border-radius: 5px;
+      text-transform: uppercase;
+}
+.description{
+    max-width: 80%;
+    text-align: center;
+    margin: auto;
+}
+.description h2{
+    font-size: 3rem;
+    padding-top: 20px;
+    color: chartreuse;
+    text-transform: uppercase;
+}
+.description p i{
+    font-size: 2rem;
+    color: coral;
+    text-transform: capitalize;
+}
+
+.description p{
+    margin-top: 20px;
+    line-height: 1rem;
+}
+/*.column{  
+    float: left;
+    width: 33.3%;
+}
+.column img{
+    width: 100%;
+    height: auto;
+}
+.row, h2{
+    text-align: center;
+    padding: 30px;
+    text-transform: capitalize;
+
+}
+
+a, li{
+    color: greenyellow;
+}
+footer{
+    background-color: coral;
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px;
+    display: inline-block;
+    width: 100%;
+}*/
+.row{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns:repeat(3, 1fr) ;
+    margin-left:30px;
+}
+.column img{
+    width: 400px;
+    height: auto;
+}
+.container img{
+    width: 200px;
+    height: 200px;
+    margin: 5px;
+    border-radius: 2px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.container img:hover{
+    transform: scale(1.1)
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.grow{
+    flex-grow: 2;
+}
+.container h4{
+    text-transform: lowercase;
+    text-align: center;
+}
+#foot a, li{
+    color: greenyellow;
+}
+#foot{
+    text-align: center;
+    color: greenyellow;
+    background-color: coral;
+}
+/* media queries */
+@media screen and (max-width:500px){
+    .row{
+    display: grid;
+    /*grid-template-columns: 1fr 1fr 1fr;*/
+    grid-template-columns:1fr;
+
+}
